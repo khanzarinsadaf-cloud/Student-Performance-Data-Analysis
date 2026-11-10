@@ -25,13 +25,15 @@ The goal of this project is to identify patterns in student performance, compare
 - Pandas – Data manipulation and analysis.
 - NumPy – Numerical calculations.
 - Matplotlib – Data visualization.
-- Jupyter Notebook– Environment used to develop and document the analysis.
+- Jupyter Notebook – Environment used to develop and document the analysis.
 
 ## Dataset
 
-The project uses `StudentsPerformance.csv`, which contains student academic scores and background information.
+This project uses the **Students Performance in Exams** dataset from Kaggle.
 
-The dataset includes the following categories:
+**Dataset Source:** [Student Performance in Exams – Kaggle](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
+
+The dataset contains 1,000 student records and the following information:
 
 - Gender
 - Race/Ethnicity
@@ -42,16 +44,36 @@ The dataset includes the following categories:
 - Reading Score
 - Writing Score
 
-Dataset Source: Add the original source and attribution for the dataset here.
+### Downloading the Dataset
+
+To run this project on your computer:
+
+1. Visit the [Kaggle dataset page](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams).
+2. Download the dataset as a ZIP file.
+3. Extract the downloaded ZIP file.
+4. Locate the CSV file named `StudentsPerformance.csv`.
+5. Place the CSV file in the same folder as the Jupyter Notebook.
+
+Dataset filename: `StudentsPerformance.csv`
+
+The notebook loads the dataset using:
+
+```python
+import pandas as pd
+
+df = pd.read_csv("StudentsPerformance.csv")
+```
 
 ## Analysis Performed
 
 ### 1. Data Exploration
+
 - Examined dataset dimensions and column names.
 - Checked data types and missing values.
 - Checked for duplicate records.
 
 ### 2. Academic Performance Analysis
+
 - Calculated average, median, minimum, and maximum scores.
 - Examined score distributions across subjects.
 - Compared score variation using standard deviation.
@@ -59,11 +81,13 @@ Dataset Source: Add the original source and attribution for the dataset here.
 - Created math performance categories.
 
 ### 3. Relationships Between Subjects
+
 - Used scatter plots to examine relationships between academic subjects.
 - Calculated correlation coefficients.
 - Compared score distributions using box plots.
 
 ### 4. Student Characteristics
+
 - Examined test preparation completion by gender.
 - Explored race/ethnicity group distributions.
 - Compared average academic scores across parental education levels.
@@ -71,19 +95,22 @@ Dataset Source: Add the original source and attribution for the dataset here.
 
 ## Repository Contents
 
-- `Student_Performance_Data_Analysis.ipynb` – Jupyter Notebook containing the complete analysis, code, and visualizations.
-- `StudentsPerformance.csv` – Dataset used in the project, if included.
+| File | Description |
+|---|---|
+| `Student_Performance_Data_Analysis.ipynb` | Jupyter Notebook containing the complete analysis, code, and visualizations. |
+| `StudentsPerformance.csv` | Dataset used for the analysis. |
 
 ## Key Learning Outcomes
 
-Through this project, I practiced:
+Through this project, I gained practical experience with:
 
-- Working with datasets using Pandas.
+- Exploring and understanding datasets using Pandas.
 - Performing numerical calculations with NumPy.
-- Creating visualizations with Matplotlib.
+- Creating data visualizations using Matplotlib.
 - Filtering, grouping, and comparing data.
 - Calculating descriptive statistics and correlations.
-- Exploring patterns and communicating findings through data analysis.
+- Identifying patterns and interpreting analytical results.
+- Presenting data analysis in a Jupyter Notebook.
 
 ## Future Improvements
 
@@ -98,3 +125,4 @@ Author: Zarin Sadaf Khan
 
 Project Type: Beginner Data Analysis Project
 
+Field: Data Science
